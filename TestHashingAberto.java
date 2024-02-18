@@ -58,9 +58,9 @@ public class TestHashingAberto {
     }
 
     @Test
-    public void testDeleteHashingComPorao(){
-        assertTrue(hp.search(10));
-        hp.delete(10);
-        assertTrue(hp.search(10));
-    }
+        public void testDeleteHashingComPorao(){
+            assertTrue(hp.search(10));
+            hp.delete(10);
+            assertFalse(hp.search(10));
+        }
 }
